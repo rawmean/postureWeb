@@ -87,21 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(el)
   })
 
-  // Download button functionality
-  const downloadButtons = document.querySelectorAll(
-    'a[href="#download"], .download-btn'
-  )
-  downloadButtons.forEach(button => {
-    if (button.textContent.includes('Download')) {
-      button.addEventListener('click', function (e) {
-        e.preventDefault()
-        showNotification(
-          'Download will be available soon! Contact us at apps@maadotaa.com for early access.',
-          'info'
-        )
-      })
-    }
-  })
+  // Download button functionality - no longer needed as we have real App Store links
+  // App Store links will open directly
 })
 
 // Notification system
